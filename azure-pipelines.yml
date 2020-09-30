@@ -42,8 +42,4 @@ steps:
       print ('Belajar ', args.world)
     arguments: --world Venus
     
-- task: PublishTestResults@2
-  condition: succeededOrFailed()
-  inputs:
-    testResultsFiles: '**/test-*.xml'
-    testRunTitle: 'Publish test results for Python $(python.version)'
+
