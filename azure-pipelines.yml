@@ -28,8 +28,7 @@ steps:
   inputs:
     scriptSource: 'inline'
     script: |
-      print('Hello world 1')
-      print('Hello world 2')
+      echo 'CI Python dengan Azure'
 
 - task: PythonScript@0
   inputs:
@@ -44,12 +43,6 @@ steps:
       args = parser.parse_args()
       print ('Belajar ', args.world)
     arguments: --world Venus
-    
-- task: PublishTestResults@2
-  condition: succeededOrFailed()
-  inputs:
-    testResultsFiles: '**/test-*.xml'
-    testRunTitle: 'Publish test results for Python $(python.version)'
     
 
 
