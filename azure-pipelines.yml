@@ -40,9 +40,10 @@ steps:
       parser.add_argument("--world", help="Provide the name of the world to greet.")
       args = parser.parse_args()
       print ('Belajar ', args.world)
-    arguments: --world CI Python
-- task: UsePythonVersion@0
+    arguments: --world Venus
+    
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
   inputs:
-    versionSpec: '3.x'
-    addToPath: true
-    architecture: 'x64'
+    testResultsFiles: '**/test-*.xml'
+    testRunTitle: 'Publish test results for Python $(python.version)'
