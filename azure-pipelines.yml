@@ -9,10 +9,8 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-
-
 steps:
-- script: Py CI Jupri!
+- script: echo Py CI Jupri!
   displayName: 'Run a one-line script'
 
 - script: |
