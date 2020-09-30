@@ -25,10 +25,10 @@ steps:
   inputs:
     scriptSource: 'inline'
     script: |
-      print('Hello world 1')
-      print('Hello world 2')
+      print('Selamat belajar')
+      print('CI Python dengan Azure')
 
-- task: PythonScrijpt@0
+- task: PythonScript@0
   inputs:
     scriptSource: inline
     script: |
