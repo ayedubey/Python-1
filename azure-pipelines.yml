@@ -39,5 +39,10 @@ steps:
       parser = argparse.ArgumentParser()
       parser.add_argument("--world", help="Provide the name of the world to greet.")
       args = parser.parse_args()
-      print ('Hello ', args.world)
-    arguments: --world Venus
+      print ('Belajar ', args.world)
+    arguments: --world CI Python
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    addToPath: true
+    architecture: 'x64'
