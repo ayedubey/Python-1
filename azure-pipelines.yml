@@ -28,7 +28,8 @@ steps:
   inputs:
     scriptSource: 'inline'
 
-    script: echo Py CI Jupri
+    script: |
+      echo Py CI Jupri!
       
 
 
