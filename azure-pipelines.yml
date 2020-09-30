@@ -27,7 +27,8 @@ steps:
 - task: PythonScript@0
   inputs:
     scriptSource: 'inline'
-    script: |
+
+    script: python app.py
       print('Selamat Belajar')
       print('CI Pythone dengan Azure')
 
