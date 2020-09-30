@@ -25,8 +25,7 @@ steps:
   inputs:
     scriptSource: 'inline'
     script: |
-      print('Selamat belajar')
-      print('CI Python dengan Azure')
+      echo Py CI Jupri!
 
 - task: PythonScript@0
   inputs:
