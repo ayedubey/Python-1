@@ -29,7 +29,7 @@ steps:
   inputs:
     scriptSource: 'inline'
 
-    script: python app.py
+    script: python app.py |
       
 
 
