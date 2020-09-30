@@ -29,7 +29,7 @@ steps:
     scriptSource: 'inline'
 
     script: |
-      echo Py CI Jupri!
+      echo 'Py CI Jupri'
       
 
 
