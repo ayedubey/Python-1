@@ -20,12 +20,16 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.6'
 
 - task: PythonScript@0
   inputs:
     scriptSource: 'inline'
     script: |
-      echo Py CI Jupri!
+      print('Hello world 1')
+      print('Hello world 2')
 
 - task: PythonScript@0
   inputs:
@@ -47,4 +51,5 @@ steps:
     testResultsFiles: '**/test-*.xml'
     testRunTitle: 'Publish test results for Python $(python.version)'
     
+
 
